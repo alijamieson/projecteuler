@@ -4,11 +4,11 @@
 # Find the sum of the digits in the number 100!
 import math
 
-n=0
+n = math.factorial(100)
+sum = 0
 
-# a=str(math.factorial(10))
-a = 10
-for i in range(1, a):
-    n+=i
-print(n)
-dict(c=None)
+while n > 0:
+    sum += n % 10  # extract last digit
+    n //= 10       # remove last digit
+
+print(sum)
