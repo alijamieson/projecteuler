@@ -11,5 +11,5 @@ while not a:
         if j % i != 0:
             a=False
             break
-    j+=j
+    j+=1
 print(j)
