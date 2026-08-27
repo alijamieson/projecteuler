@@ -4,8 +4,11 @@
 # https://www.w3schools.com/python/ref_func_bin.asp
 # https://www.w3schools.com/python/python_howto_reverse_string.asp
 
-b=[]
-def palmdne(a):
-    global b
-    if str(a)==reversed(str(a)):
-        b.append(a)
+def basetwo():
+    c=0
+    for i in range(0,1000000):
+        j = bin(i)[2:]
+        if j==j[::-1] and str(i)==str(i)[::-1]:
+            c+=i
+    return(c)
+print(basetwo())
